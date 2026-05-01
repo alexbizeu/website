@@ -16,31 +16,56 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="transport.html">Transport</a></li>
-                    <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
                     <li class="nav-item ms-lg-3"><a class="btn btn-outline-secondary btn-sm" href="../fr/transport.html">FR 🇫🇷</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container my-5">
-        <h1 class="text-center mb-5">How to get there</h1>
+   <!-- NEW: Hero Section for Transport Title -->
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">How to get there</h1>
+
+        </div>
+    </header>
+
+    <main class="container my-5">
 
         <div class="row g-4">
             <!-- Travel Details -->
             <div class="col-md-6">
                 <div class="card h-100 p-4 border-0 shadow-sm">
-                    <a href="https://maps.app.goo.gl/RrXdHeD8uky1zUR66" target="_blank" class="text-decoration-none fw-bold" style="color: var(--primary-color);">
-                53 route de la grand'haie 44119 Grandchamp des Fontaines
+                    <a href="https://maps.app.goo.gl/RrXdHeD8uky1zUR66" target="_blank" class="fw-bold" style="color: #0000EE; text-decoration: underline;">
+    53 Route de la Grand'haie 44119 Grandchamp-des-Fontaines
+</a>
             </a>
-                    <h3>✈️ By Plane</h3>
-                    <p>The nearest airport is <strong>[Airport Name]</strong>. From there, you can take a shuttle or a 20-minute taxi.</p>
+                    <h3 class="mt-4">🚆 By Train/Bus</h3>
+                    <p>TGV to Nantes (~2h from Paris Monthparnasse).</p>
+                    <p>Then take local bus ALEOP 300 (2.90€) to Cent-Sillons (~45min from Nantes Gare SNCF).</p>
+                     <p>10 min walk from Cent-Sillons bus stop to the venue</p>
+                    <!-- PDF Link -->
+    <p>
+        <a href="https://aleop.paysdelaloire.fr/je-recherche-un-horaire-aleop?field_transport_type=5&city_title=&ligne_number=300" target="_blank" class="btn btn-outline-primary fw-bold">
+            📄 View Bus Timetable (Line 300)
+        </a>
+    </p>
 
-                    <h3 class="mt-4">🚆 By Train</h3>
-                    <p>Stop at <strong>[Station Name]</strong>. It is a 10-minute walk from the venue.</p>
+    <!-- Warning Message -->
+    <div class="p-3 border-start border-4 border-warning bg-light">
+        <p class="mb-0 text-dark">
+            ⚠️ <strong>Note:</strong> Summer timetables have not been issued yet.
+            They are likely to match the "weekend and holidays" current times.
+        </p>
+    </div>
+
+
 
                     <h3 class="mt-4">🚗 Parking</h3>
-                    <p>Free parking is available at the venue. Enter via [Street Name].</p>
+                    <p>Please park in the below and leave the alley clear:</p>
+<!-- The Image -->
+    <img src="../images/parking.png" alt="Parking Map" class="img-fluid rounded" style="max-width: 300px; height: auto;">
+
                 </div>
             </div>
 
@@ -55,5 +80,10 @@
             </div>
         </div>
     </div>
+</main>
+
+    <footer class="text-center py-4 text-muted">
+        <p>© 2026 Alexandre Bizeul</p>
+    </footer>
 </body>
 </html>
