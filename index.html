@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>TESTPAGE</title>
-</head>
+<html>
+<script>
+    // Simple logic to detect browser language
+    var lang = navigator.language || navigator.userLanguage;
+    if (lang.indexOf('fr') > -1) {
+        window.location.href = "/fr/index.html";
+    } else {
+        window.location.href = "/en/index.html";
+    }
+</script>
 <body>
-<h1>Un titre de niveau 1</h1>
-
-<p>
-    Un premier petit paragraphe.
-</p>
-
-<h2>Un titre de niveau 2</h2>
-
-<p>
-    Un autre paragraphe contenant un lien pour aller
-    sur le site.
-    TESRCOMMIT
-</p>
+    <p>Redirecting... / Redirection...</p>
 </body>
 </html>
